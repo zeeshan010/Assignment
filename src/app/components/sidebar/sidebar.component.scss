@@ -1,0 +1,39 @@
+.sidebar {
+  min-height: 100vh;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px;
+  padding-left: 12px;
+
+}
+.commonli {
+  padding: 10px 17px;
+  border-radius: 5px;
+  display: flex;
+  color: #47a1f6 ;
+  margin: 10px 0;
+  cursor: pointer;
+
+
+}
+.activeli {
+  background: #47a1f6;
+  color: white;
+}
+.not {
+  color: #47a1f6;
+  margin-right: 10px;
+}
+.notActive {
+  color: white;
+
+}
+.menu {
+  padding: 19px;
+  border-bottom: 2px solid #f0f5fb;
+  margin: 0;
+
+}
+

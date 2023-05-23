@@ -1,0 +1,16 @@
+
+<div class="sidebar">
+
+<h3 class="menu">Menu</h3>
+<ul>
+  <li class="commonli" [ngClass]="{'activeli': currentPage == '/' }" (click)="changePage('')">
+    <span  [ngClass]="{'notActive': currentPage == '/' }" class="material-icons not">home</span>
+    Home</li>
+  <li class="commonli" [ngClass]="{'activeli': currentPage == '/users' }"(click)="changePage('users')">
+    <span [ngClass]="{'notActive': currentPage == '/users' }" class="material-icons not">account_circle</span>
+    User</li>
+  <li class="commonli"  [ngClass]="{'activeli': currentPage == '/blogs' }"(click)="changePage('blogs')">
+    <span [ngClass]="{'notActive': currentPage == '/blogs' }" class="material-icons not">note</span>
+    Blogs</li>
+</ul>
+</div>

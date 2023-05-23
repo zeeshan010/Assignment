@@ -1,0 +1,47 @@
+<div class="container-fluid">
+  <div class="heading">
+    <div class="uperheading">
+      <span   class="material-icons not">checklist_rtl</span>
+      <h4>Blogs</h4>
+
+    </div>
+
+    <div class="row user">
+      <p class="total"> Total Posts:{{blogs.length}}</p>
+
+    </div>
+
+
+  </div>
+  <div class="mainPart">
+    <div class="blogs" *ngFor="let item of blogs">
+      <div class="row " >
+        <div class="col-md-4">
+          <img class="blogImg" src="../../../assets/sundown.jpeg" alt="">
+
+        </div>
+        <div class="col-md-8">
+          <div class="mainData" >
+
+
+          <h2>{{item.title}}</h2>
+          <p class="para">{{item.body}}</p>
+          <p class="para" *ngIf="item.seeless">{{item.p2}}</p>
+          <p class="para" *ngIf="item.seeless">{{item.p3}}</p>
+          <p   *ngIf="item.seeless" class="show" (click)="seeAllData(item,false)">See Less</p>
+          <p  class="show" *ngIf="!item.seeless" (click)="seeAllData(item,true)">See More</p>
+          <p class="lastPart">   <span   class="material-icons clock">schedule</span>
+            <span class="date">23 May 2023</span>
+            <span   class="material-icons clock">account_circle</span>
+            <span class="profile"> Alex butti</span>
+
+          </p>
+
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

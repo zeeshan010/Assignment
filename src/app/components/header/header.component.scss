@@ -1,0 +1,30 @@
+.header {
+  padding: 20px 20px;
+  border-bottom: 2px solid #f0f5fb;
+}
+.rightPart {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+.profile {
+  background-color: #47a1f6;
+  border-radius: 50%;
+padding: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.not {
+  margin-top: 13px;
+  cursor: pointer;
+}
+.lorem {
+  color: rgb(96, 95, 95);
+  font-weight: bold;
+
+}
+.apsm {
+  font-weight: 300;
+
+}

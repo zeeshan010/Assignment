@@ -1,0 +1,86 @@
+<div class="container-fluid">
+  <div class="heading">
+    <div class="uperheading">
+      <span   class="material-icons not">checklist_rtl</span>
+      <h4>Home</h4>
+
+    </div>
+
+    <div class="row user">
+      <p class="total"> Home Page Description</p>
+
+    </div>
+
+
+  </div>
+  <div class="mainPart">
+    <div class="cardt">
+      <div class="card1 cardC">
+        <div class="row shoppingR">
+          <span class="material-icons shopping">shopping_cart</span>
+        </div>
+        <div class="row">
+          <h3 class="cartItem">343</h3>
+          <h5 class="cardName">Total Order</h5>
+        </div>
+
+
+      </div>
+      <div class="card2 cardC">
+        <div class="row shoppingR">
+          <span class="material-icons shopping">credit_card_off</span>
+        </div>
+        <div class="row">
+          <h3 class="cartItem">243</h3>
+          <h5 class="cardName">Total Expenses</h5>
+        </div>
+
+      </div>
+      <div class="card3 cardC">
+        <div class="row shoppingR">
+          <span class="material-icons shopping">poll</span>
+        </div>
+        <div class="row">
+          <h3 class="cartItem">143</h3>
+          <h5 class="cardName">Total Revenue</h5>
+        </div>
+
+      </div>
+      <div class="card4 cardC">
+        <div class="row shoppingR">
+          <span class="material-icons shopping">person</span>
+        </div>
+        <div class="row">
+          <h3 class="cartItem">743</h3>
+          <h5 class="cardName">New Users</h5>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="latestBlog">
+      <div class=" blogP">
+        <span  class="material-icons not">checklist_rtl</span>
+      <h5>Recent Blogs</h5>
+
+      </div>
+      <div class="allblogs">
+        <div class="blog1" *ngFor="let item of latestBlogs">
+          <div class="row">
+            <img class="bImg" src="../../../assets/sundown.jpeg" alt="">
+          </div>
+          <div class="row">
+            <h5 class="blogH">{{item.title}}</h5>
+            <p class="blogP">{{item.body}}</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>

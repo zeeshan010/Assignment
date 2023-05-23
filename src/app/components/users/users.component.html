@@ -1,0 +1,99 @@
+<div class="container-fluid">
+  <div class="heading">
+    <div class="uperheading">
+      <div class="row">
+        <div class="col-md-6 leftSide">
+          <span class="material-icons not">checklist_rtl</span>
+          <h4>Users</h4>
+        </div>
+        <div class="col-md-6 rightSide">
+          <span
+            (click)="changeGrid(true)"
+            [ngClass]="{ activetoc: isgrid }"
+            class="material-icons toc"
+            >toc</span
+          >
+          <span
+            (click)="changeGrid(false)"
+            [ngClass]="{ activetoc: !isgrid }"
+            class="material-icons toc"
+            >view_module</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="row user">
+      <p class="total">Total User:{{users.length}}</p>
+    </div>
+  </div>
+  <div class="mainPart">
+    <div class="blogs" *ngIf="!isgrid">
+      <div class="row">
+        <div class="col-md-2 asq" *ngFor="let item of users">
+          <div class="userP">
+            <div class="row firstpart">
+              <img class="userImg" src="../../../assets/a.jpeg" alt="" />
+            </div>
+            <span class="material-icons chat">send</span>
+            <div class="row secondpart">
+              <h5 class="username">{{ item.name }}</h5>
+              <p class="useremail">{{ item.email }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blogcolumn" *ngIf="isgrid">
+      <div class="row tableP">
+        <div class="col-md-6">
+          <span class="showP">Show</span>
+
+          <select class="selectOpt" name="" id="">
+            <option value="7">10</option>
+          </select>
+          <span class="option"> Option</span>
+        </div>
+        <div class="col-md-6 searchBar">
+          <div class="mai">
+            <span class="material-icons"> search </span>
+            <input class="search" type="search" placeholder="search entity" />
+          </div>
+        </div>
+      </div>
+      <div class="maintable">
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr class="topBorder">
+              <th>Name</th>
+              <th>Designation</th>
+              <th>Joining Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of users">
+              <td>
+                <img class="add" src="../../../assets/a.jpeg" alt="" />
+                <span class="specificName">{{ item.name }}</span>
+              </td>
+              <td>
+                {{ item.username }}
+              </td>
+              <td>
+                {{ item.email }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row tableP">
+        <div class="col-md-6">
+          <span class="showP">Show 1 to 10 users</span>
+        </div>
+        <div class="col-md-6 searchBar">
+          <div class="mai2">1</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
